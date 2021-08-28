@@ -15,6 +15,8 @@ app.use(
   })
 );
 
+app.use("/api/contact", require("./routes/contact.route"));
+
 const PORT = process.env.PORT || 5000;
 
 const server = app.listen(PORT, () =>
