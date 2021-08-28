@@ -38,8 +38,6 @@ exports.contact = async function (req, res, next) {
     } catch (error) {
       return next(new ErrorResponse("Email Could not be sent!", 500));
     }
-
-    res.json(contact);
   } catch (error) {
     next(error);
   }
